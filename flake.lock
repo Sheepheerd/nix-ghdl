@@ -1,0 +1,44 @@
+{
+  "nodes": {
+    "ghdl-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1758048239,
+        "narHash": "sha256-fhulmyrozdUIBMubPwndudLECr++dQmMlZ0D6IC1PHw=",
+        "owner": "ghdl",
+        "repo": "ghdl",
+        "rev": "44c4af1cd0673f1ed97c8abc04596a78bd9d2a0f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ghdl",
+        "repo": "ghdl",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1758035966,
+        "narHash": "sha256-qqIJ3yxPiB0ZQTT9//nFGQYn8X/PBoJbofA7hRKZnmE=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "8d4ddb19d03c65a36ad8d189d001dc32ffb0306b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "ghdl-src": "ghdl-src",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
