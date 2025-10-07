@@ -18,7 +18,6 @@
     let
       systems = [
         "aarch64-linux"
-        "aarch64-darwin"
       ];
       forAllSystems = f: nixpkgs.lib.genAttrs systems (system: f (import nixpkgs { inherit system; }));
     in
@@ -47,7 +46,7 @@
             export CC=${pkgs.gcc}/bin/gcc
             export CXX=${pkgs.gcc}/bin/g++
 
-            ./configure --prefix=$out --with-llvm-config
+            ./configure --prefix=$out --with-llvm-config --enable-python
 
 
           '';
