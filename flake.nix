@@ -46,7 +46,7 @@
             export CC=${pkgs.gcc}/bin/gcc
             export CXX=${pkgs.gcc}/bin/g++
 
-            ./configure --prefix=$out --with-llvm-config --enable-python
+            ./configure --prefix=$out --with-llvm-config --enable_libghdl
 
 
           '';
