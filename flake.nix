@@ -29,16 +29,17 @@
 
           src = ghdl-src;
 
-          nativeBuildInputs = [
-            pkgs.git
-            pkgs.cmake
-            pkgs.gcc
-            pkgs.llvm
-            pkgs.wget
-            pkgs.gnumake
-            pkgs.automake
-            pkgs.zlib
-            pkgs.gnat-bootstrap14
+          nativeBuildInputs = with pkgs; [
+            git
+            cmake
+            gcc
+            llvm
+            wget
+            gnumake
+            automake
+            zlib
+            gnat-bootstrap14
+            python3
           ];
 
           configurePhase = ''
@@ -47,7 +48,6 @@
             export CXX=${pkgs.gcc}/bin/g++
 
             ./configure --prefix=$out --with-llvm-config --enable-libghdl
-
 
           '';
 
